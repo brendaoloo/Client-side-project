@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University website design</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"> <!--link from  fontawesome-->
+</head>
+<body>
+        <!--Header section-->
+        <section class="sub-header">
+                <nav>
+                        <a href="index.html"><img src="images/logo.png" alt="server error"></a>
+                        <div class="nav-links" id="navLinks">
+                                <i class="fa fa-times" onclick="hideMenu()"></i>   <!--from font awesome--><!--adding click functions using javascript to hide menu-->
+                                <ul>
+                                        <li><a href="index.html">HOME</a></li>
+                                        <li> <a href="about.html">ABOUT</a></li>
+                                         <li><a href="course.html">COURSE</a></li>
+                                          <li> <a href="blog.html">BLOG</a></li>
+                                           <li><a href="contact.html">CONTACT</a></li>
+                                </ul>
+                        </div>
+                        <i class="fa fa-bars" onclick="showMenu()" > </i> <!--from font awesome--> <!--adding click functions using javascript to show menu-->
+                </nav>
+                   <h1>Our certificates &amp; online programs for 2025</h1>
+        </section>
+        <!--Blog page contnt-->
+<section class="blog-content">
+        <div class="row">
+                <div class="blog-left">
+                        <img src="images/certificate.jpg" alt="server error">
+                        <h2>Our certificates &amp; online programs for 2025</h2>
+                        <p>In 2025, Eduford University is proud to offer a diverse array of certificates and online programs designed to meet the evolving needs of learners worldwide.<br> Our certificate courses provide focused, industry-relevant training to help students excel in their chosen fields, while our online programs deliver the flexibility and accessibility that modern education demands.<br> With cutting-edge technology and expert faculty, we ensure a seamless virtual learning experience without compromising quality. Whether you're advancing your career, acquiring new skills, or pursuing lifelong learning, Eduford University is your trusted partner for success in the digital age. Join us and make 2025 a year of growth and achievement!</p>
+                        <br>
+                        <p>In 2025, Eduford University continues to redefine modern education with an expansive selection of certificates and online programs tailored to diverse career paths and interests. <br>Our programs are crafted to align with the latest industry trends, ensuring that learners gain competitive skills and practical knowledge. With interactive virtual classrooms, engaging course materials, and personalized support, students can experience the quality of on-campus learning from the comfort of their homes.<br> Whether you're a professional seeking to upskill or a learner exploring new horizons, Eduford University's certificates and online programs are your gateway to boundless opportunities and success.</p>
+                        <br>
+                        <p>Eduford University's 2025 certificates and online programs are designed to cater to the dynamic needs of a global student community.<br> With a strong emphasis on accessibility, our programs bridge the gap between ambition and achievement, providing learners with the tools they need to excel in a competitive world. <br>From interactive modules to hands-on projects, we ensure that our students gain not only theoretical knowledge but also practical experience that can be directly applied to their careers.<br> At Eduford, we are committed to creating opportunities for everyone to succeed, regardless of location or schedule. Let us help you unlock your potential in 2025 and beyond!</p>
+                        <br>
+                        <p>As we look ahead to 2025, Eduford University remains steadfast in its mission to make high-quality education accessible to everyone. <br>Our certificates and online programs are thoughtfully curated to suit a wide spectrum of interests and professional goals.<br> By integrating innovative teaching methods and advanced digital tools, we create an engaging learning environment that caters to both beginners and experienced professionals.<br> At Eduford, we are passionate about empowering learners to achieve their aspirations and make meaningful contributions to their industries and communities.<br> Together, let's embrace the future of education with confidence and ambition.</p>
+
+                        <div class="comment-box">
+                                <h3>Leave a comment</h3>
+                                <form action="" class="comment-form">
+                                        <input type="text" placeholder="Enter Name">
+                                        <input type="email" placeholder="Enter Email">
+                                        <textarea rows="5" placeholder="Your comment">
+                                        </textarea>
+                                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                                </form>
+                        </div>
+                </div>
+                <div class="blog-right">
+                        <h3>Post categories</h3>
+                        <div>
+                                <span>business Analytics</span>
+                                <span>21</span>
+                        </div>
+                        <div>
+                                <span>Data Science</span>
+                                <span>28</span>
+                        </div>
+                        <div>
+                                <span>Machine Learning</span>
+                                <span>15</span>
+                        </div>
+                        <div>
+                                <span>Computer Science</span>
+                                <span>38</span>
+                        </div>
+                        <div>
+                                <span>AutoCAD</span>
+                                <span>42</span>
+                        </div>
+                        <div>
+                                <span>Journalism</span>
+                                <span>22</span>
+                        </div>
+                        <div>
+                                <span>Commerce</span>
+                                <span>30</span>
+                        </div>
+                </div>
+        </div>
+</section>
+
+
+<!--Footer-->
+<section class="footer">
+        <h4>About Us</h4>
+        <p>Eduford University is a beacon of academic excellence, innovation, and inclusivity, dedicated to shaping the leaders of tomorrow.<br> Nestled in a thriving community, our university offers world-class education through cutting-edge research, inspiring faculty, and state-of-the-art facilities.<br> At Eduford, we empower students to explore their passions, embrace curiosity, and transform knowledge into impactful action. With a strong commitment to fostering diversity and collaboration, Eduford University cultivates a dynamic environment where every individual can thrive and contribute to the betterment of society. <br>Join us in our mission to unlock potential and create a brighter future together.</p>
+        <div class="icons">
+                <i class="fa fa-facebook" aria-hidden="true" ></i>
+                <i class="fa fa-twitter" aria-hidden="true" ></i>
+                <i class="fa fa-instagram" aria-hidden="true" ></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        </div>
+        <p>Made with  <i class="fa fa-heart-o" aria-hidden="true"></i> by 2.0 tech</p>
+</section>
+        <!--Javascript for toggle menu-->
+        <script>
+                var navLinks= document.getElementById("navLinks");
+        //creating functions used for opening and closing the menu
+        function showMenu(){                                                    
+                //add a variable to change the right value
+                navLinks.style.right= "0";
+        }
+        function hideMenu(){
+                navLinks.style.right= "-200px";
+        }
+        </script>
+</body>
+</html>

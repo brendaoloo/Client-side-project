@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University website design</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"> <!--link from  fontawesome-->
+</head>
+<body>
+        <!--Header section-->
+        <section class="sub-header">
+                <nav>
+                        <a href="index.html"><img src="images/logo.png" alt="server error"></a>
+                        <div class="nav-links" id="navLinks">
+                                <i class="fa fa-times" onclick="hideMenu()"></i>   <!--from font awesome--><!--adding click functions using javascript to hide menu-->
+                                <ul>
+                                        <li><a href="index.html">HOME</a></li>
+                                        <li> <a href="about.html">ABOUT</a></li>
+                                         <li><a href="course.html">COURSE</a></li>
+                                          <li> <a href="blog.html">BLOG</a></li>
+                                           <li><a href="contact.html">CONTACT</a></li>
+                                </ul>
+                        </div>
+                        <i class="fa fa-bars" onclick="showMenu()" > </i> <!--from font awesome--> <!--adding click functions using javascript to show menu-->
+                </nav>
+                   <h1>About Us</h1>
+        </section>
+
+<!--About us content-->
+<section class="about-us">
+        <div class="row">
+                <div class="about-col">
+                        <h1>We are the world's biggest university</h1>
+                        <p>At Eduford University, we are committed to providing an enriching and transformative educational experience.<br> Our institution is founded on the principles of academic excellence, innovation, and inclusivity, fostering a community where curiosity thrives and ideas flourish. <br>Through our diverse range of programs and dedicated faculty, we empower students to achieve their fullest potential and make a positive impact in the world.<br> Eduford is more than just a place of learning—it's a hub for personal growth, collaboration, and discovery. Together, we are building a brighter future, one inspired mind at a time.</p>
+                        <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                        <div class="about-col">
+                                <img src="images/about.jpg" alt="server error">
+                            </div>
+        </div>
+</section>
+<!--Footer-->
+<section class="footer">
+        <h4>About Us</h4>
+        <p>Eduford University is a beacon of academic excellence, innovation, and inclusivity, dedicated to shaping the leaders of tomorrow.<br> Nestled in a thriving community, our university offers world-class education through cutting-edge research, inspiring faculty, and state-of-the-art facilities.<br> At Eduford, we empower students to explore their passions, embrace curiosity, and transform knowledge into impactful action. With a strong commitment to fostering diversity and collaboration, Eduford University cultivates a dynamic environment where every individual can thrive and contribute to the betterment of society. <br>Join us in our mission to unlock potential and create a brighter future together.</p>
+        <div class="icons">
+                <i class="fa fa-facebook" aria-hidden="true" ></i>
+                <i class="fa fa-twitter" aria-hidden="true" ></i>
+                <i class="fa fa-instagram" aria-hidden="true" ></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        </div>
+        <p>Made with  <i class="fa fa-heart-o" aria-hidden="true"></i> by 2.0 tech</p>
+</section>
+        <!--Javascript for toggle menu-->
+        <script>
+                var navLinks= document.getElementById("navLinks");
+        //creating functions used for opening and closing the menu
+        function showMenu(){                                                    
+                //add a variable to change the right value
+                navLinks.style.right= "0";
+        }
+        function hideMenu(){
+                navLinks.style.right= "-200px";
+        }
+        </script>
+</body>
+</html>
